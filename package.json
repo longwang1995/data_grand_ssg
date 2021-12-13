@@ -1,0 +1,26 @@
+{
+  "name": "data_grand_ssg",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "ssg": "vite-ssg build",
+    "preview": "vite preview",
+    "d": "sh deploy.sh"
+  },
+  "dependencies": {
+    "@vueuse/head": "^0.5.1",
+    "less": "^4.1.2",
+    "reset.css": "^2.0.2",
+    "swiper": "^7.3.1",
+    "vite-plugin-pages": "^0.19.3",
+    "vite-ssg": "^0.16.2",
+    "vue": "^3.2.23",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.2",
+    "@vue/server-renderer": "^3.2.24",
+    "vite": "^2.7.0"
+  }
+}

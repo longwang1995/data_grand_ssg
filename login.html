@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/data_grand_ssg/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/data_grand_ssg/static/js/app-fda7bf4e.js"
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/data_grand_ssg/static/js/vendor-e426e4cb.js"
+    />
+    <link rel="stylesheet" href="/data_grand_ssg/static/css/app-908a76af.css" />
+    <link
+      rel="modulepreload"
+      crossorigin=""
+      href="/data_grand_ssg/static/js/login-fe6f0499.js"
+    />
+    <meta name="head:count" content="0" />
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true">
+      <div class="main">
+        <header data-v-875aea24="">
+          <div class="container flex" data-v-875aea24="">
+            <div class="logo" data-v-875aea24="">
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+                data-v-875aea24=""
+              />
+            </div>
+            <div class="nav" data-v-875aea24="">
+              <ul class="flex" data-v-875aea24="">
+                <!--[-->
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">官网首页</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">产品服务</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">解决方案</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">合作伙伴</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">新闻中心</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">关于我们</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">加入我们</span>
+                </li>
+                <!--]-->
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="login">login</div>
+        <footer data-v-f4df51b6="">
+          <div class="footer-top" data-v-f4df51b6="">
+            <div class="container footer-nav flex" data-v-f4df51b6="">
+              <!--[-->
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word1-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">详尽的技术文档</span>
+              </div>
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word2-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">长期开发维护</span>
+              </div>
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word3-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">定期培训和报告</span>
+              </div>
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word4-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">毫秒级数据反馈</span>
+              </div>
+              <!--]-->
+            </div>
+          </div>
+          <div class="footer-center" data-v-f4df51b6="">
+            <div class="container" data-v-f4df51b6="">
+              <div
+                class="links-wrap flex"
+                style="font-weight: normal"
+                data-v-f4df51b6=""
+              >
+                <!--[-->
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">热门产品</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">机器人流程自动化(RPA)</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文档智能审阅</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文本挖掘引擎</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">光学字符识别(OCR)</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能搜索系统</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能推荐系统</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能知识图谱</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">行业解决方案</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">银行机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">证券机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">财税机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">政务机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">供应链机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">运营商机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能制造解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能文本机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智慧法律解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">科技行业解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">电商行业解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">媒体行业解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文娱行业解决方案</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">帮助文档</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">数据上报常见问题</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文本挖掘相关问题</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">数据抓取相关问题</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">接入文档</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">关于达观</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">关于达观</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">新闻中心</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">加入我们</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">品牌标识</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">联系我们</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">电话：400-175-9889</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">官方微信号：DataGrand_</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">邮箱：contact@datagrand.com</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6=""
+                        >地址：上海市浦东新区亮秀路112号Y1座（总部）北京 | 深圳
+                        | 成都 | 苏州 | 郑州（子公司）</a
+                      >
+                    </li>
+                    <!--]--><!--[--><img
+                      width="96"
+                      height="96"
+                      style="margin-top: 30px"
+                      src="http://static.datagrand.com/images/qrcode_datagrand.png"
+                      alt=""
+                      data-v-f4df51b6=""
+                    />
+                    <li
+                      class="link"
+                      style="margin-top: 10px"
+                      data-v-f4df51b6=""
+                    >
+                      官方微信公众号
+                    </li>
+                    <!--]-->
+                  </ul>
+                </div>
+                <!--]-->
+              </div>
+              <div class="friend-link flex" data-v-f4df51b6="">
+                <span data-v-f4df51b6="">友情链接:</span
+                ><!--[--><a
+                  href="//www.baidu.com"
+                  target="_blank"
+                  data-v-f4df51b6=""
+                  >百度</a
+                ><a href="//www.baidu.com" target="_blank" data-v-f4df51b6=""
+                  >百度</a
+                ><a href="//www.baidu.com" target="_blank" data-v-f4df51b6=""
+                  >百度</a
+                ><!--]-->
+              </div>
+              <div class="copy-right flex" data-v-f4df51b6="">
+                <img
+                  data-original="http://static.datagrand.com/images/copy-right-img.jpg"
+                  class="lazy copy-right-img"
+                  src="http://static.datagrand.com/images/copy-right-img.jpg"
+                  style="opacity: 1; top: 0px"
+                  data-v-f4df51b6=""
+                /><span class="copy-right" data-v-f4df51b6=""
+                  >Copyright DataGrand Tech Inc. All Rights Reserved.<a
+                    href="https://beian.miit.gov.cn/"
+                    target="_blank"
+                    class="hidden-xs"
+                    data-v-f4df51b6=""
+                  >
+                    沪ICP备15028292号-1</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/data_grand_ssg/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/data_grand_ssg/static/js/app-fda7bf4e.js"
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/data_grand_ssg/static/js/vendor-e426e4cb.js"
+    />
+    <link rel="stylesheet" href="/data_grand_ssg/static/css/app-908a76af.css" />
+    <meta name="head:count" content="0" />
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true">
+      <div class="main">
+        <header data-v-875aea24="">
+          <div class="container flex" data-v-875aea24="">
+            <div class="logo" data-v-875aea24="">
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+                data-v-875aea24=""
+              />
+            </div>
+            <div class="nav" data-v-875aea24="">
+              <ul class="flex" data-v-875aea24="">
+                <!--[-->
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">官网首页</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">产品服务</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">解决方案</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">合作伙伴</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">新闻中心</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">关于我们</span>
+                </li>
+                <li data-v-875aea24="">
+                  <span data-v-875aea24="">加入我们</span>
+                </li>
+                <!--]-->
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="index-page" data-v-3a2623be="">
+          <div class="banner" data-v-3a2623be="">
+            <div class="swiper" style="margin: 0 auto" data-v-3a2623be="">
+              <!--[--><!--]--><!----><!----><!---->
+              <div class="swiper-wrapper">
+                <!--[--><!--]--><!--[-->
+                <div class="swiper-slide" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-idps-new-banner-v3.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                </div>
+                <div class="swiper-slide" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-idps-new-banner-v3.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                </div>
+                <div class="swiper-slide" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-idps-new-banner-v3.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                </div>
+                <div class="swiper-slide" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-idps-new-banner-v3.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                </div>
+                <!--]--><!--[--><!--]-->
+              </div>
+              <!--[--><!--]-->
+            </div>
+          </div>
+          <div
+            class="section flex"
+            style="justify-content: center; background: #fff"
+            data-v-3a2623be=""
+          >
+            <div class="container" style="width: 100%" data-v-3a2623be="">
+              <p class="title" data-v-3a2623be="">
+                领先的文本处理技术和智能办公机器人服务
+              </p>
+              <p class="sub-title" data-v-3a2623be="">
+                您所需要的人工智能企业服务，达观数据以业界领先的水平为您提供
+              </p>
+              <div class="container serve-container" data-v-3a2623be="">
+                <div class="serve flex" data-v-3a2623be="">
+                  <!--[-->
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be="">文本挖掘引擎</span>
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be="">智能推荐系统</span>
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="/data_grand_ssg/static/png/product-logo-03-52bf2cc9.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be="">智能知识图谱</span>
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="/data_grand_ssg/static/png/product-logo-04-ad5ae45b.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be="">文档智能审阅</span>
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="/data_grand_ssg/static/png/product-logo-05-cada51e0.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be="">智能搜索系统</span>
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <!--]-->
+                </div>
+              </div>
+              <div class="serve-content flex" data-v-3a2623be="">
+                <div class="container flex" data-v-3a2623be="">
+                  <!--[--><!--]-->
+                </div>
+              </div>
+              <div class="container serve-container" data-v-3a2623be="">
+                <div class="serve flex" data-v-3a2623be="">
+                  <!--[-->
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="/data_grand_ssg/static/png/product-logo-06-3e00cd58.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be=""
+                      >客户意见洞察系统</span
+                    >
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="/data_grand_ssg/static/png/product-logo-07-c6d3ad86.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be=""
+                      >光学字符识别(OCR)</span
+                    >
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be=""
+                      >机器人流程自动化(RPA)</span
+                    >
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be="">数据挖掘分析</span>
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <div class="serve-item flex" data-v-3a2623be="">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                      data-v-3a2623be=""
+                    /><span class="name" data-v-3a2623be="">文本审核</span>
+                    <div class="bottom-line" data-v-3a2623be=""></div>
+                  </div>
+                  <!--]-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section flex"
+            style="
+              justify-content: center;
+              background: url('http://static.datagrand.com/images/index-solution-bg-new.png');
+            "
+            data-v-3a2623be=""
+          >
+            <div class="container" data-v-3a2623be="">
+              <p class="title" style="color: #fff" data-v-3a2623be="">
+                成熟领先的文本处理和智能办公机器人解决方案
+              </p>
+              <p class="sub-title" style="color: #fff" data-v-3a2623be="">
+                达观数据已定制多种行业解决方案，助力企业快速实现智能化升级
+              </p>
+              <div class="plan flex" data-v-3a2623be="">
+                <!--[-->
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-01.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">银行机器人解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      基于对银行业务的深刻洞察，创新集成流程机器人、计算机视觉、NLP、知识图谱等自动化领域前沿技术，全面赋能银行信贷审批、国际业务、风险管控、智能营销、运营管理财务税务等业务流程，提升风险管理水平和流程运营效率，优化用户体验，助力银行业“数智”化全面升级
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-02.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">证券机器人解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      是机器视觉、OCR、NLP、RPA与证券业务的融合与协同，深入投资银行、资产管理、融资融券等业务场景，可快速识别招股说明书、债券募集说明书等复杂金融文档，计算财务指标、全面复核披露风险，自动执行业务流程，有效提升证券行业创新金融服务，促进业务快速健康发展
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-03.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">财税机器人解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      致力于为企业提供完整的财税解决方案，自动化处理长耗时、高重复的财税业务并提高其准确率。集成达观自研的OCR和智能文档处理系统（IDPS），从会计、税务、审计、资金管理、档案、总账等领域为企业全方位赋能，真正为企业做到智能自动化升级
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-04.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">政务机器人解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      基于对政务业务的深刻洞察，创新集成流程自动化机器人、计算机视觉、NLP、知识图谱等人工智能领域前沿技术，打破系统、数据、流程孤岛和壁垒，实现人机协作，全面赋能政府业务流程智能化，优化民生服务体验，助力政府单位“数智”化全面升级
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-05.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">供应链机器人解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      综合应用NLP、OCR、智能搜索询价、知识图谱等AI技术，强化全链条数据协同，打通生产、运输、仓储、分销等供应链信息流，降低跨部门多环节的人工成本并提高运营效率，助力数据密集型和依靠经验场景向数字化、智能化转型升级
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-06.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">运营商机器人解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      围绕运营商“降本增效”的主营发展战略，通过以业务为中心、精细化运营为基础的数字化信息系统建设，帮助运营商提升运营效率、优化营销效果和积累数据资产，促进其“虚拟员工”的转型策略，从根本上满足运营商“向IT要人工”的战略需求
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-07.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">智能制造解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      基于对制造业多个场景探索理解，利用RPA、计算机视觉、NLP等人工智能领域前沿技术，创新推出失效知识图谱，助力制造业更全面、更精准、更高效的故障分析；以及智能工单、智能财税、智能报关和档案管理等一系列智能办公机器人，深度赋能制造业各细分领域
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-08.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">
+                      智能文本机器人解决方案
+                    </p>
+                    <p class="context" data-v-3a2623be="">
+                      为企业提供各类文本、票据、单证、表格治理解决方案，实现合同关键要素自动抽取及录入、制度规范性审计扩大人均产能，为员工减负，助力企业降本增效，实现数字化转型
+                    </p>
+                  </div>
+                </div>
+                <div class="plan-item" data-v-3a2623be="">
+                  <img
+                    src="http://static.datagrand.com/images/index-solutions-09.png"
+                    alt=""
+                    data-v-3a2623be=""
+                  />
+                  <div class="content" data-v-3a2623be="">
+                    <p class="title" data-v-3a2623be="">智能能源行业解决方案</p>
+                    <p class="context" data-v-3a2623be="">
+                      达观数据智能能源行业解决方案，基于对电力、油气、新能源等行业多场景的探索理解，利用机器人流程自动化、计算机视觉、自然语言处理等人工智能领域前沿技术，提供智能行政公文处理、智能财税、智能工单、知识管理和故障分析等一系列智能解决方案，深度赋能各细分领域，赋能能源行业释放人力，加速数字化转型升级
+                    </p>
+                  </div>
+                </div>
+                <!--]-->
+              </div>
+            </div>
+          </div>
+          <div
+            class="section flex"
+            style="
+              justify-content: center;
+              background: url('http://static.datagrand.com/images/index-partners-bg.png');
+            "
+            data-v-3a2623be=""
+          >
+            <div class="container" data-v-3a2623be="">
+              <p class="title" data-v-3a2623be="">他们都信赖达观数据</p>
+              <p class="sub-title" data-v-3a2623be="">
+                与各行业建立良好的合作关系，基于彼此间的高度信任实现长期性、战略性的协同发展关系
+              </p>
+              <div class="plan flex" data-v-3a2623be="">
+                <img
+                  src="http://static.datagrand.com/images/index-partners.png"
+                  alt=""
+                  style="width: 100%"
+                  data-v-3a2623be=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="section flex"
+            style="
+              justify-content: center;
+              background: url('http://static.datagrand.com/images/index-news-bg.png');
+            "
+            data-v-3a2623be=""
+          >
+            <div class="container" data-v-3a2623be="">
+              <p class="title" style="color: #fff" data-v-3a2623be="">
+                新鲜动态
+              </p>
+              <p class="sub-title" style="color: #fff" data-v-3a2623be="">
+                科技前沿、大咖直播、活动展会，达观精彩不停
+              </p>
+              <div class="dt flex" data-v-3a2623be="">
+                <div class="dt-left" data-v-3a2623be="">
+                  <p class="title" data-v-3a2623be="">达观数据携手CCF</p>
+                  <p class="text" data-v-3a2623be="">
+                    举办第五届“达观杯”自然语言处理文本分类竞赛 ，开赛报名中！
+                  </p>
+                </div>
+                <div class="dt-right" data-v-3a2623be="">
+                  <div
+                    class="box-xl box-top"
+                    style="
+                      width: 460px;
+                      background-image: url(http://static.datagrand.com/images/index-news2-bg.png);
+                    "
+                    data-v-3a2623be=""
+                  >
+                    <p class="title" data-v-3a2623be="">再获国家级荣誉！</p>
+                    <p class="text" data-v-3a2623be="">
+                      达观数据入选工信部专精特新“小巨人”企业
+                    </p>
+                  </div>
+                  <div
+                    class="box-xs box-top"
+                    style="
+                      width: 332px;
+                      background-image: url(http://static.datagrand.com/images/index-news3-bg.png);
+                    "
+                    data-v-3a2623be=""
+                  >
+                    <p class="title" data-v-3a2623be="">
+                      “捐书送希望·儿童节献礼”
+                    </p>
+                    <p class="text" data-v-3a2623be="">
+                      达观数据为甘肃贫困小学捐建爱心图书室
+                    </p>
+                  </div>
+                  <div
+                    class="box-xs box-bottom"
+                    style="
+                      width: 385px;
+                      background-image: url(http://static.datagrand.com/images/index-news4-bg.png);
+                    "
+                    data-v-3a2623be=""
+                  >
+                    <p class="title" data-v-3a2623be="">
+                      荣获吴文俊人工智能科技进步奖
+                    </p>
+                    <p class="text" data-v-3a2623be="">
+                      达观数据成为2018年度上海地区唯一一家入选的人工智能企业
+                    </p>
+                  </div>
+                  <div
+                    class="box-xl box-bottom"
+                    style="
+                      width: 406px;
+                      background-image: url(http://static.datagrand.com/images/index-news5-bg.png);
+                    "
+                    data-v-3a2623be=""
+                  >
+                    <p class="title" data-v-3a2623be="">
+                      世界人工智能大会亮点频出
+                    </p>
+                    <p class="text" data-v-3a2623be="">
+                      达观数据与浦东青联携手多位科技专家话智能
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section flex"
+            style="
+              justify-content: center;
+              background: url('http://static.datagrand.com/images/index-save-bg-v2.png');
+            "
+            data-v-3a2623be=""
+          >
+            <div class="container" data-v-3a2623be="">
+              <p class="title" data-v-3a2623be="">
+                提供安全合规的文本智能处理服务
+              </p>
+              <p class="sub-title" data-v-3a2623be="">
+                权威认证的文本智能处理服务，充分保障您的业务安全与稳定
+              </p>
+              <div class="rz flex" data-v-3a2623be="">
+                <!--[-->
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-01-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-02-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国际权威信息安全领域<br />ISO27001信息安全管理<br />体系认证</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-03-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-04-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-05-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-06-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-07-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-08-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-09-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <div class="rz-item flex" data-v-3a2623be="">
+                  <div class="img-wrap" data-v-3a2623be="">
+                    <img
+                      src="http://static.datagrand.com/images/certification-authority-10-v3.png"
+                      alt=""
+                      data-v-3a2623be=""
+                    />
+                  </div>
+                  <span class="text" data-v-3a2623be=""
+                    >国家级高新技术企业</span
+                  >
+                </div>
+                <!--]-->
+              </div>
+            </div>
+          </div>
+          <div
+            class="section flex"
+            style="justify-content: center; background: #fff"
+            data-v-3a2623be=""
+          >
+            <div class="container" data-v-3a2623be="">
+              <p class="title" data-v-3a2623be="">
+                知名投资机构助力 领跑文本智能处理领域
+              </p>
+              <div class="plan flex" data-v-3a2623be="">
+                <img
+                  src="http://static.datagrand.com/images/index-abouts-v2.jpg"
+                  alt=""
+                  style="width: 100%"
+                  data-v-3a2623be=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer data-v-f4df51b6="">
+          <div class="footer-top" data-v-f4df51b6="">
+            <div class="container footer-nav flex" data-v-f4df51b6="">
+              <!--[-->
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word1-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">详尽的技术文档</span>
+              </div>
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word2-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">长期开发维护</span>
+              </div>
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word3-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">定期培训和报告</span>
+              </div>
+              <div class="nav-item flex" data-v-f4df51b6="">
+                <img
+                  src="http://static.datagrand.com/images/footer-word4-new.png"
+                  alt=""
+                  data-v-f4df51b6=""
+                /><span data-v-f4df51b6="">毫秒级数据反馈</span>
+              </div>
+              <!--]-->
+            </div>
+          </div>
+          <div class="footer-center" data-v-f4df51b6="">
+            <div class="container" data-v-f4df51b6="">
+              <div
+                class="links-wrap flex"
+                style="font-weight: normal"
+                data-v-f4df51b6=""
+              >
+                <!--[-->
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">热门产品</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">机器人流程自动化(RPA)</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文档智能审阅</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文本挖掘引擎</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">光学字符识别(OCR)</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能搜索系统</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能推荐系统</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能知识图谱</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">行业解决方案</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">银行机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">证券机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">财税机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">政务机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">供应链机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">运营商机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能制造解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智能文本机器人解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">智慧法律解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">科技行业解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">电商行业解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">媒体行业解决方案</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文娱行业解决方案</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">帮助文档</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">数据上报常见问题</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">文本挖掘相关问题</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">数据抓取相关问题</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">接入文档</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">关于达观</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">关于达观</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">新闻中心</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">加入我们</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">品牌标识</a>
+                    </li>
+                    <!--]--><!---->
+                  </ul>
+                </div>
+                <div class="links-item" data-v-f4df51b6="">
+                  <ul data-v-f4df51b6="">
+                    <li class="title" data-v-f4df51b6="">联系我们</li>
+                    <!--[-->
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">电话：400-175-9889</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">官方微信号：DataGrand_</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6="">邮箱：contact@datagrand.com</a>
+                    </li>
+                    <li class="link" data-v-f4df51b6="">
+                      <a data-v-f4df51b6=""
+                        >地址：上海市浦东新区亮秀路112号Y1座（总部）北京 | 深圳
+                        | 成都 | 苏州 | 郑州（子公司）</a
+                      >
+                    </li>
+                    <!--]--><!--[--><img
+                      width="96"
+                      height="96"
+                      style="margin-top: 30px"
+                      src="http://static.datagrand.com/images/qrcode_datagrand.png"
+                      alt=""
+                      data-v-f4df51b6=""
+                    />
+                    <li
+                      class="link"
+                      style="margin-top: 10px"
+                      data-v-f4df51b6=""
+                    >
+                      官方微信公众号
+                    </li>
+                    <!--]-->
+                  </ul>
+                </div>
+                <!--]-->
+              </div>
+              <div class="friend-link flex" data-v-f4df51b6="">
+                <span data-v-f4df51b6="">友情链接:</span
+                ><!--[--><a
+                  href="//www.baidu.com"
+                  target="_blank"
+                  data-v-f4df51b6=""
+                  >百度</a
+                ><a href="//www.baidu.com" target="_blank" data-v-f4df51b6=""
+                  >百度</a
+                ><a href="//www.baidu.com" target="_blank" data-v-f4df51b6=""
+                  >百度</a
+                ><!--]-->
+              </div>
+              <div class="copy-right flex" data-v-f4df51b6="">
+                <img
+                  data-original="http://static.datagrand.com/images/copy-right-img.jpg"
+                  class="lazy copy-right-img"
+                  src="http://static.datagrand.com/images/copy-right-img.jpg"
+                  style="opacity: 1; top: 0px"
+                  data-v-f4df51b6=""
+                /><span class="copy-right" data-v-f4df51b6=""
+                  >Copyright DataGrand Tech Inc. All Rights Reserved.<a
+                    href="https://beian.miit.gov.cn/"
+                    target="_blank"
+                    class="hidden-xs"
+                    data-v-f4df51b6=""
+                  >
+                    沪ICP备15028292号-1</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

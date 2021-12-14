@@ -1,0 +1,1 @@
+import{u as e,o as t,c as o}from"./vendor-9f2719e5.js";const s={class:"login"},n={layout:"main"};function a(c){return e({title:"\u767B\u5F55"}),(_,i)=>(t(),o("div",s,"login"))}const r=Object.assign(n,{setup:a});export{r as default};

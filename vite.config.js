@@ -4,10 +4,11 @@ import Pages from 'vite-plugin-pages'
 
 // https://vitejs.dev/config/
 export default {
-  plugins: [vue(),
-  Pages({
-    extensions: ['vue'],
-  }),
+  plugins: [
+    vue(),
+    Pages({
+      extensions: ['vue'],
+    }),
   ],
   base: './',
   resolve: {
@@ -32,5 +33,9 @@ export default {
         assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
       },
     },
-  }
+  },
+  ssgOptions: {
+    script: 'async',
+    formatting: 'prettify',
+  },
 }

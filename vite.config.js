@@ -1,11 +1,14 @@
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import Pages from 'vite-plugin-pages'
+import ElementPlus from 'unplugin-element-plus/vite'
+
 
 // https://vitejs.dev/config/
 export default {
   plugins: [
     vue(),
+    ElementPlus(),
     Pages({
       extensions: ['vue'],
     }),
